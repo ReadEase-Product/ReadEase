@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="topo-do-site">
+        <nav>
+            <img src="img/ReadEase.png" alt="logo" id="logoHeader">
+            <ul class="menu">
+                <li><a class="sobre" href="#Pp">ReadEase</a></li>
+                <li><a class="serviços" href="#subprodutos">Produtos</a></li>
+                <li><a class="agendamento" href="#nome">Contato</a></li>
+                <li><a class="contatomenu" href="#qr-img">Feedback</a></li>
+            </ul>   
+            <!-- Botão Hamburger -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Menu Mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-btn" id="closeBtn">×</button>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+  </header>
+    </header>
+    <main>
+        <div class="produto-principal">
+            <img id="Pp" src="img/produto principal.png" alt="Produto">
+            <div class="descricao">
+                <h1>ReadEase o melhor<br>suporte para seus livros</h1>
+            <p>
+                <b>-Suporte para livros com Led Recarregável <br>
+                Acompanha cabo USB <br>
+               
+                ⁠-Frete grátis para Salvador e região metropolitana 
+                <br>
+                ⁠-A partir de 10 unidades sai a valor com retirada na empresa 
+                <br>⁠
+                -Tamanho 32x21x28
+                <br>
+                -⁠Material: mdf </p></b>
+            </div>
+        </div>
+        
+        <div class="compra">
+            <a type="button" value="Compre aqui" id="compre" href=""><b>Compre Agora</b></a>
+        </div>
+    </main>
+    <section>
+    <div class="subprodutos" id="subprodutos">
+      <div class="item-produto">
+        <img src="img/marca.png " alt="Produto 1">
+        <h4>Marcador de Pagina</h4>
+        <p>Marcadores de paginas sofisticados e dourados. <br>Na compra de dois leve um de graça!</p>
+        <a type="button" value="Compre Aqui" class="botaocompra1"  href=><b>Compre Agora</b></a>
+      </div>
+      <div class="item-produto">
+            <img src="img/Portalibro.png" alt=""><br>
+            <h4>Organizador de Livros</h4>
+            <p>
+                Dimensões:
+                Altura: 22 cm
+                Largura: 15 cm
+                Capa rígida para proteção de livros.
+                Fecho magnético integrado para fixação.
+                Exterior: Acrilico transparente texturizado antiderrapante.
+                Interior: Revestimento em microfibra não abrasiva.</p>
+            <a type="button" value="Compre Aqui" class="botaocompra2"  href=><b>Compre Agora</b></a>
+      </div>
+        <div class="item-produto">
+             <img src="img/luminaria.png" alt=""><br>
+            <h4>Luminária Minimalista</h4>
+            <p>
+                Dimensões:
+                Altura: 70 cm
+                Materiais:
+                Estrutura: Ligas metálicas de acabamento fosco.
+                Difusor: Acrílico moldado opalino (espessura: 3 mm).
+                Voltagem: 110W, compatível com sistemas de iluminação residencial padrão.
+            </p>
+            <a type="button" class="botaocompra3"  href=""><b>Compre Agora</b></a>
+      </div>
+    </section>  
+    </div>
+    <div class="contato-container">
+<form action="https://formsubmit.co/lulubatislb@gmail.com" method="POST">
+    <h2>Formulário de Contato</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" required>
+
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+    <!-- Proteção contra SPAM -->
+    <input type="hidden" name="_captcha" value="false">
+
+    <!-- Redirecionamento após envio -->
+    <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+
+    <button type="submit">Enviar</button>
+</form>
+
+        <article class="qr-article">
+            <h2>Sua opinião é muito importante para nós,
+                <br>deixe aqui a sua avaliação dos nossos produtos⬇️</h2>
+            <img id="qr-img" src="img/qrcode.png" alt="QR Code para outra página" class="qr-img">
+            <h2>Não consegue ler o Qr Code?</h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqZeAw5LK2qVJwd28HN5rZAq2yM9Wdwlm0o8gOuDEcnGBl_w/viewform" target="_blank" class="qr-link">Clique aqui </a>
+        </article>
+    </div> <!-- Menu Mobile -->
+
+    <!-- Menu Mobile -->
+     <div class="overlay-menu" id="overlay-menu"></div>
+        <footer>
+        <div class="footer-content">
+            <ul class="social-icons">
+                <li><a href="https://api.whatsapp.com/send/?phone=%2B5571999816613&text&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"   ></i></a></li>
+                <li><a href="https://www.instagram.com/readease.oficial?igsh=MXAxMmtzd3NiamEyNw%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-"></i></a></li>
+            </ul>
+            <p>&copy; 2025 André Luiz Todos os direitos reservados.</p>
+        </div>
+<script src="script.js"></script>        
+</body>
+</html>
